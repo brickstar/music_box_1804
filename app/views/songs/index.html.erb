@@ -1,5 +1,23 @@
-<h1> All Songs </h1>
-<% @songs.each do |song| %>
-  <h2><%= song.title %></h2>
-  <p>Plays: <%= song.play_count %></p>
-<% end %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Arimo|Questrial" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id='logo'> Songs </h1>
+    <div class="songs-container">
+      <% @songs.each do |song| %>
+      <ul id='song-boxes'>
+        <%= image_tag("vinyl.jpg", alt: "Vinyl Photo by Adrian Korte", id: 'vinyl-image') %>
+        <div class="song-attributes">
+        <li><%= song.title %></li>
+        <li><%= song.length %> seconds</li>
+        <li>Play Count: <%= song.play_count %></li>
+      </div>
+      </ul>
+      <% end %>
+    </div>
+  </body>
+</html>
