@@ -1,0 +1,52 @@
+
+ol, ul {
+	list-style: none;
+}
+
+body {
+  background-color: #e6fef2;
+}
+
+.song-attributes {
+  margin-top: 12px;
+	font-family: 'Questrial', sans-serif;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.songs-container {
+	display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 25% 25% 25% 25%;
+}
+
+#logo {
+	font-size: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+	font-family: 'Arimo';
+	font-style: italic;
+}
+
+
+#vinyl-image {
+  margin-top: 18px;
+  margin-left: 34px;
+  height: 70px;
+  width: 90px;
+  border-radius: 50%
+}
+
+#song-boxes {
+  padding: 0;
+  margin: 30px;
+  background-color: #e6f3ec;
+  height: 160px;
+  width: 160px;
+  border: 1px solid #e6f3ec;
+  border-radius: 5%;
+}
